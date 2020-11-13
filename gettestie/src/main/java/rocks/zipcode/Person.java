@@ -1,5 +1,4 @@
-package gettestie.src.main.java.rocks.zipcode;
-
+package rocks.zipcode;
 
 public class Person {
     private String name;
@@ -18,6 +17,7 @@ public class Person {
      * Set a new name for this person.
      */
     public void setName(String newName) {
+
         name = newName;
     }
 
@@ -25,6 +25,7 @@ public class Person {
      * Return the name of this person.
      */
     public String getName() {
+
         return name;
     }
 
@@ -32,6 +33,7 @@ public class Person {
      * Set a new birth year for this person.
      */
     public void setYearOfBirth(int newYearOfBirth) {
+
         yearOfBirth = newYearOfBirth;
     }
 
@@ -39,6 +41,7 @@ public class Person {
      * Return the birth year of this person.
      */
     public int getYearOfBirth() {
+
         return yearOfBirth;
     }
 
@@ -53,6 +56,7 @@ public class Person {
      * Return the address of this person.
      */
     public Address getAddress() {
+
         return address;
     }
 
