@@ -23,10 +23,30 @@ public class TestStack {
     }
 
     // Make a bigger test exercising more Stack methods.....
+    //write a test for isEmpty(), push(), pop(), and peak();
+
 
     @Test
-    public void stackTest(){
-        //write a test for isEmpty(), push(), pop(), and peak();
+    public void isEmpty(){
+        Stack<String> stack = new Stack<>();
+        stack.push("Hello world");
+        stack.pop();
+        assertTrue(stack.isEmpty());
 
+    }
+
+    @Test
+    public void pustTest(){
+        Stack<String> stack = new Stack<>();
+        stack.push("Hello world");
+        assertFalse(stack.isEmpty());
+    }
+
+    @Test
+    public void peakTest(){
+        Stack<String> stack = new Stack<>();
+        stack.push("Hello world");
+        String peek = stack.peek();
+        assertEquals("Hello world", peek);
     }
 }

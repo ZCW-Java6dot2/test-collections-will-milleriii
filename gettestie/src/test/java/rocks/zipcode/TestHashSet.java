@@ -28,4 +28,18 @@ public class TestHashSet {
 
     }
 
+    @Test
+    public void testAdd(){
+        HashSet<String> sports =new HashSet<String>();
+        sports.add("Football");
+        sports.add("Basketball");
+        sports.add("Soccer");
+
+
+        Integer setExpected = 3;
+        Integer setActual = sports.size();
+
+        assertEquals(setExpected, setActual);
+    }
+
 }
